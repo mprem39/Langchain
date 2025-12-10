@@ -1,16 +1,13 @@
 import os
 from dotenv import load_dotenv, find_dotenv
-from langchain_openai import ChatOpenAI
+from langchain.chat_models import init_chat_model
 
 # Load .env file
 load_dotenv(find_dotenv())
 
 # Initialize LLM (Chat Model)
-llm = ChatOpenAI(
-    model="gpt-4o",
-    temperature=0.7
-)
+model = init_chat_model("gpt-4.1")
 
 # Send prompt
-response = llm.invoke("what is the whether in chennai?")
+response = model.invoke("Why do parrots talk?")
 print(response.content)
