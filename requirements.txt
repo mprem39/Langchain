@@ -1,1 +1,4 @@
 langchain
+openai
+python_dotenv
+langchain_openai
