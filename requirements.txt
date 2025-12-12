@@ -5,3 +5,5 @@ langchain_openai
 streamlit
 langchain_community
 numpy
+langchain_chroma
+langchain-community
